@@ -15,13 +15,10 @@ function App() {
   }
     useEffect(() => {
       alert("On First Render")
-
-
     }, [])
  
     useEffect(()=>{
       alert("On Every Render")
-
     })
     
     useEffect(()=>{
