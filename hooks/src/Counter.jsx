@@ -1,14 +1,15 @@
 import { useState, useRef, useEffect } from 'react'
-import reactLogo from './assets/react.svg'
+// import reactLogo from './assets/react.svg'
 
 
 function Counter(){
 let  [count,C_func]= useState(1)
 let ref=useRef()
 let ref2=useRef()
-
+let s=useRef(0);
     const add= ()=>{
-        C_func(count++)
+        C_func(count=>count +1)
+        console.log(s.current++); 
         ref.current.style.backgroundColor= "#52796f" 
         ref2.current.style.backgroundColor= "#ff8fab" 
     }
