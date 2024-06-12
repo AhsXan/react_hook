@@ -8,7 +8,11 @@ let ref=useRef()
 let ref2=useRef()
 let s=useRef(0);
     const add= ()=>{
-        C_func(count=>count +1)
+     //   C_func(count +1)  
+        C_func(count => count +1)
+        // C_func(count +1)
+        // C_func(count +1)
+        // C_func(count +1)
         console.log(s.current++); 
         ref.current.style.backgroundColor= "#52796f" 
         ref2.current.style.backgroundColor= "#ff8fab" 
